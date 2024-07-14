@@ -62,7 +62,16 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
-
+.section-title{
+    font-size: 2.7rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+.section-description{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
 /* Header section starts here */
 .navbar, .banner{
     max-width: 1440px;
@@ -119,11 +128,6 @@ main{
 .team-content{
     max-width: 530px;
 }
-.team-title{
-    font-size: 2.7rem;
-    margin-bottom: 24px;
-    font-weight: 700;
-}
 #quick-list{
     color: #727272;
     font-weight: 500;
@@ -131,11 +135,7 @@ main{
 #features{
     color: #FF900E;
 }
-.team-description{
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    text-align: justify;
-}
+
 /* Team section starts here */
 
 /* Features section starts here */
@@ -143,7 +143,34 @@ main{
 /* Features section ends here */
 
 
-
+/* Facts section starts here */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(1, 240px);
+    justify-content: center;
+    text-align: center;
+    gap: 0 125px;
+    margin-top: 100px;
+}
+.fact{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.fact-title{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.fact-footer{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* Facts section ends here */
 
 
 
@@ -153,11 +180,16 @@ main{
 
 /* Responsive design starts here (For mobile) */
 @media screen and (max-width:576px) {
-    .navbar, .nav-links, .team{
+    .navbar, .nav-links, .team, .facts{
         flex-direction: column;
     }
     .team-images{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 240px);
+        gap: 24px;
     }
 }
 
@@ -165,7 +197,13 @@ main{
 /* Responsive design starts here (For tablet) */
 @media screen and (min-width:576px) and (max-width:992px) {
     .navbar, .team{
+        display: flex;
         flex-direction: column;
         gap: 50px;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 240px);
+        gap: 24px;
     }
 }
