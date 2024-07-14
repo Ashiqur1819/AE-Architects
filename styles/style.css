@@ -105,6 +105,42 @@ main{
 }
 /* Header section ends here */
 
+/* Team section starts here */
+.team{
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.team-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team-content{
+    max-width: 530px;
+}
+.team-title{
+    font-size: 2.7rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+#quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+#features{
+    color: #FF900E;
+}
+.team-description{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+/* Team section starts here */
+
+/* Features section starts here */
+
+/* Features section ends here */
 
 
 
@@ -120,7 +156,9 @@ main{
     .navbar, .nav-links, .team{
         flex-direction: column;
     }
-
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
