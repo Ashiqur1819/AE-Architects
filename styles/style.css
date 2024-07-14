@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Classes starts here */
+.dark-01{
+    color: #131313;
+}
+.dark-02{
+    color: #424242;
+    font-weight: 500;
+}
+.dark-03{
+    color: #727272;
+}
+.dark-04{
+    color: #A1A1A1;
+}
+.dark-05{
+    color: #D0D0D0;
+}
+.dark-06{
+    color: #E7E7E7;
+}
+.dark-07{
+    color: #F3F3F3;
+}
+.text-primary{
+    color: #FF900E;
+}
+.bg-primary{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.f-size-primary{
+    font-size: 45px;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+header, main > section{
+    margin-bottom: 100px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header section starts here */
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.brand{
+    font-size: 2.7rem;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+.banner-title{
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+.banner-description{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.banner-img{
+    max-width: 100%;
+}
+/* Header section ends here */
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design starts here (For mobile) */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links, .team{
+        flex-direction: column;
+    }
+
+}
+
+
+/* Responsive design starts here (For tablet) */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar, .team{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
