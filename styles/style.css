@@ -224,7 +224,18 @@ main{
 }
 /* Sponsors section ends here */
 
-
+/* Footer section starts here */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer{
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* Footer section ends here */
 
 
 
